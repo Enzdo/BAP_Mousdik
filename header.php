@@ -10,11 +10,14 @@
 </head>
 <body>
     <header>
-    <header>
-			<a class="logo "href="index.php"></a>
+        <div class="navigation">
+            <a id="home" href="index.php">
+                <div class="logo">
+                </div>
+            </a>
 			<nav>
 				<h4 class="site-title"><a href="nos_pianos.php" rel="home">Nos pianos</a></h4>
 				<h4 class="site-title"><a href="rencontrez_moi.php" rel="home">Rencontrez moi</a></h4>	
 			</nav>
+        </div>
 	</header>
-    </header>

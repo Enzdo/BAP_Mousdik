@@ -25,52 +25,52 @@ require 'header.php';
                                     <div class="image-content">
 
                                         <div class="card-image">
-                                            <img src="images/profile6.jpg" alt="" class="card-img">
+                                            <img src="img/AyAYYjBfln68R3g480x360.jpg" alt="" class="card-img">
                                         </div>
                                     </div>
 
-                                    <div class="card-content">
+                                    <div class="card-content white">
                                         <h2 class="name">David Dell</h2>
-                                        <p class="description">1750e</p>
+                                        <a href=""><p class="description">Voir plus</p></a>
                                     </div>
                                 </div>
                                 <div class="card swiper-slide">
                                     <div class="image-content">
 
                                         <div class="card-image">
-                                            <img src="images/profile7.jpg" alt="" class="card-img">
+                                            <img src="img/AyAYYjBfln68R3g480x360.jpg" alt="" class="card-img">
                                         </div>
                                     </div>
 
-                                    <div class="card-content">
+                                    <div class="card-content white">
                                         <h2 class="name">David Dell</h2>
-                                        <p class="description">1750e</p>
+                                        <a href=""><p class="description">Voir plus</p></a>
                                     </div>
                                 </div>
                                 <div class="card swiper-slide">
                                     <div class="image-content">
 
                                         <div class="card-image">
-                                            <img src="images/profile8.jpg" alt="" class="card-img">
+                                            <img src="img/AyAYYjBfln68R3g480x360.jpg" alt="" class="card-img">
                                         </div>
                                     </div>
 
-                                    <div class="card-content">
+                                    <div class="card-content white">
                                         <h2 class="name">David Dell</h2>
-                                        <p class="description">1750e</p>
+                                        <a href=""><p class="description">Voir plus</p></a>
                                     </div>
                                 </div>
                                 <div class="card swiper-slide">
                                     <div class="image-content">
 
                                         <div class="card-image">
-                                            <img src="images/profile9.jpg" alt="" class="card-img">
+                                            <img src="img/AyAYYjBfln68R3g480x360.jpg" alt="" class="card-img">
                                         </div>
                                     </div>
 
-                                    <div class="card-content">
+                                    <div class="card-content white">
                                         <h2 class="name">David Dell</h2>
-                                        <p class="description">1750e</p>
+                                        <a href=""><p class="description">Voir plus</p></a>
                                     </div>
                                 </div>
                             </div>
