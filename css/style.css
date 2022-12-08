@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+
+header {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #04030c;
+  padding: 2% 0%;
+  color: white;
+}
+
+header .logo {
+  width: 30%;
+  height: 90%;
+  background-image: url("../img/logo_blanc.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 50% 50%;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+  justify-content: space-evenly;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+main .section_rdv {
+  background-color: #04030c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 90vh;
+  color: white;
+}
+
+main .box_rdv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 50%;
+  height: 100%;
+  padding-left: 15%;
+}
+
+main .section_rdv h3 {
+  font-size: 55px;
+  font-weight: 400;
+}
+
+main .rdv_img {
+  height: 100%;
+  width: 35%;
+  background-image: url("../img/background_rdv.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+
+main .boutique_img {
+  height: 100%;
+  width: 35%;
+  background-image: url("../img/background_boutique.png");
+  background-repeat: no-repeat;
+  background-size: 110%;
+}
+
+main .box_rdv button {
+  color: white;
+  background-color: #8a8604;
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+
+#border {
+  border-radius: 20px;
+  padding: 7px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .box_rdv button img {
+  width: 20px;
+  height: 20px;
+  filter: invert(1);
+}
+
+
+
+main .surlignement {
+  width: 100%;
+  height: 10px;
+  border-bottom: 1px solid white;
+}
+
+
+main .collection {
+  background-color: #04030c;
+  color: white;
+}
+
+#collection {
+  color: white;
+}
+
+#titre_collection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter {
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 45%;
+}
+
+.filter p {
+  color: #04030c;
+}
+
+.filter .active {
+  padding: 2%;
+  border-radius: 12px;
+  background-color: #8a8604;
+  ;
+  color: white;
+}
+
+.white {
+  color: white;
+}
+
+main .actualite {
+  padding: 5% 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: #04030c;
+}
+
+main .actualite .titre_actualite {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  height: 20%;
+}
+
+main .actualite .titre_actualite h5 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.slide-container {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  margin-top: 5%;
+  max-width: 1120px;
+  width: 100%;
+}
+
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.card {
+  border-radius: 25px;
+  background-color: #FFF;
+}
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+.card-image {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  background: rgb(0, 0, 0);
+  padding: 3px;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.description {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+
+
+.swiper-pagination-bullet {
+  background-color: #a6a6a6;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #04030c;
+}
+
+.contact {
+  background-color: #04030c;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 5%;
+}
+
+.contact .formulaire {
+  width: 50%;
+}
+
+.contact .formulaire h3 {
+  font-size: 57px;
+  font-weight: 500;
+}
+
+.contact .formulaire p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.contact .formulaire form {
+  padding: 5% 0%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 70%;
+}
+
+.contact .formulaire .info_user {
+  width: 100%;
+}
+
+#fname {
+  width: 29%;
+}
+
+#femail {
+  width: 70%;
+}
+
+#ftexte {
+  width: 99.5%;
+  height: 150px;
+}
+
+#submit {
+  color: white;
+  background-color: #8a8604;
+  width: 40%;
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+
+
+.contact .formulaire input {
+  border-radius: 8px;
+  padding: 1%;
+  margin: 1% 0% 1% 0%;
+}
+
+.contact .info_contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 30%;
+}
+
+.contact .info_contact h6 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.contact .info_contact h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+main .les_avis {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  padding: 3% 0%;
+}
+
+.top_card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top_card h4 {
+  font-size: 25px;
+}
+
+.les_avis .card-content {
+  width: 30%;
+}
+
+.card-content .name {
+  padding-top: 5%;
+}
+
+.justifier {
+  text-align: justify;
+}
+
+.color {
+  color: #04030c;
+}
+
+.profil {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10%;
+}
+
+.photo_profil {
+  width: 30%;
+  height: 100%;
+}
+
+.photo_profil img {
+  width: 100%;
+  height: 100%;
+}
+
+.profil_mousdik {
+  width: 45%;
+}
+
+.nom_reseau {
+  border-bottom: #04030c solid 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+
+.nom_reseau h2 {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+
+
+
+footer {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #04030c;
+  color: white;
+  width: 100%;
+  height: 40vh;
+}
+
+footer .nav_footer {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid white;
+  height: 80%;
+}
+
+footer .lien_page {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer h2 {
+  font-size: 38px;
+  font-weight: 500;
+}
+
+footer .lien_page a {
+  text-decoration: none;
+  color: white;
+}
+
+footer h6 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+}
