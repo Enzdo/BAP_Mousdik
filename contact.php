@@ -1,7 +1,7 @@
 <?php
 
 if (isset($_POST)) {
-    if(isset($_POST)["nom"] && isset($_POST)["mail"] && isset($_POST)["sujet"] && isset($_POST)["message"]){
+    if(isset($_POST["nom"]) && isset($_POST["mail"]) && isset($_POST["sujet"]) && isset($_POST["message"]){
         $message = "Ce mail vous à été envoyé via le formulaire de contacte du site Mousdik Piano
     Nom : " . $_POST["nom"] . "
     Email : " . $_POST["mail"] . "
