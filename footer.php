@@ -1,3 +1,4 @@
+
       <footer>
         <div class="nav_footer">
             <div class="nom_entreprise">
@@ -16,6 +17,7 @@
 
       <!-- JavaScript -->
       <script src="js/script.js"></script>
+      <script src="js/avis.js"></script>
     </body>
 
 </html>

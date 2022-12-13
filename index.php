@@ -64,7 +64,7 @@ require 'header.php';
                                     <div class="image-content">
 
                                         <div class="card-image">
-                                            <img src="images/profile9.jpg" alt="" class="card-img">
+                                                <img src="images/profile9.jpg" alt="" class="card-img">
                                         </div>
                                     </div>
 
