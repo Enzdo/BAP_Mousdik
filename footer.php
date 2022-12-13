@@ -18,6 +18,9 @@
       <!-- JavaScript -->
       <script src="js/script.js"></script>
       <script src="js/avis.js"></script>
+      <script src="js/slider_script.js"></script>
+      <script src="js/responsive.js"></script>
+      <script src="js/filter.js"></script>
     </body>
 
 </html>
