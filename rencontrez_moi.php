@@ -1,7 +1,7 @@
 <?php
 
 require 'header.php';
-require 'contact.php';
+require_once 'contact.php';
 ?>
 <main>
     <div class="profil">
