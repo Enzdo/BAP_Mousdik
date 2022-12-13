@@ -1,6 +1,7 @@
 <?php
 
 require 'header.php';
+require 'contact.php';
 ?>
 <main>
     <div class="profil">
@@ -23,14 +24,17 @@ require 'header.php';
                     <div class="formulaire">
                         <h3>Contactez moi !</h3>
                         <p>N'hésitez pas à m'envoyer un message pour plus d'information !</p>
-                        <form action="">
+
+                        <form method="post">
                             <div class="info_user">
-                                <input type="text" id="fname" name="firstname" placeholder="Votre nom">
-                                <input type="text" id="femail" name="firstname" placeholder="Votreemail@gmail.com">
+                                <input type="text" id="fname" name="nom" placeholder="Votre nom">
+                                <input type="text" id="femail" name="mail" placeholder="Votreemail@gmail.com">
+                                <input type="text" id="" name="sujet" placeholder="Votre sujet">
                             </div>
-                            <input type="text" id="ftexte" name="firstname" placeholder="Écrire un message ici">
-                            <input type="submit" value="VALIDER" id="submit">
+                            <textarea type="text" id="ftexte" name="message" placeholder="Écrire un message ici"></textarea>
+                            <input type="submit" value="ENVOYER" id="submit">
                         </form>
+
                     </div>
                     <div class="info_contact">
                         <div class="information">
