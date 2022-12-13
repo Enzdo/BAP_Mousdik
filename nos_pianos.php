@@ -15,10 +15,10 @@ require 'header.php';
             <div class="titre_actualite" id="titre_collection">
                 <h5 >New collection</h5>
                 <div class="filter">
-                    <p class="active left">Plus récents</p>
-                    <p class="non_active">Plus anciens</p>
-                    <p class="non_active">Prix croissant</p>
-                    <p class="non_active rigth">Prix décroissant</p>
+                    <p class="active left" id="recents">Plus récents</p>
+                    <p class="non_active" id="anciens">Plus anciens</p>
+                    <p class="non_active" id="croissant">Prix croissant</p>
+                    <p class="non_active rigth" id="decroissant">Prix décroissant</p>
                 </div>
             </div>
             <div class="slider">
