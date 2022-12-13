@@ -1,6 +1,7 @@
 <?php
 
 require 'header.php';
+require 'contact.php';
 ?>
 
     <main>
@@ -25,52 +26,52 @@ require 'header.php';
                                     <div class="image-content">
 
                                         <div class="card-image">
-                                            <img src="images/profile6.jpg" alt="" class="card-img">
+                                            <img src="img/AyAYYjBfln68R3g480x360.jpg" alt="" class="card-img">
                                         </div>
                                     </div>
 
-                                    <div class="card-content">
+                                    <div class="card-content white">
                                         <h2 class="name">David Dell</h2>
-                                        <p class="description">1750e</p>
+                                        <a href=""><p class="description">Voir plus</p></a>
                                     </div>
                                 </div>
                                 <div class="card swiper-slide">
                                     <div class="image-content">
 
                                         <div class="card-image">
-                                            <img src="images/profile7.jpg" alt="" class="card-img">
+                                            <img src="img/AyAYYjBfln68R3g480x360.jpg" alt="" class="card-img">
                                         </div>
                                     </div>
 
-                                    <div class="card-content">
+                                    <div class="card-content white">
                                         <h2 class="name">David Dell</h2>
-                                        <p class="description">1750e</p>
+                                        <a href=""><p class="description">Voir plus</p></a>
                                     </div>
                                 </div>
                                 <div class="card swiper-slide">
                                     <div class="image-content">
 
                                         <div class="card-image">
-                                            <img src="images/profile8.jpg" alt="" class="card-img">
+                                            <img src="img/AyAYYjBfln68R3g480x360.jpg" alt="" class="card-img">
                                         </div>
                                     </div>
 
-                                    <div class="card-content">
+                                    <div class="card-content white">
                                         <h2 class="name">David Dell</h2>
-                                        <p class="description">1750e</p>
+                                        <a href=""><p class="description">Voir plus</p></a>
                                     </div>
                                 </div>
                                 <div class="card swiper-slide">
                                     <div class="image-content">
 
                                         <div class="card-image">
-                                                <img src="images/profile9.jpg" alt="" class="card-img">
+                                            <img src="img/AyAYYjBfln68R3g480x360.jpg" alt="" class="card-img">
                                         </div>
                                     </div>
 
-                                    <div class="card-content">
+                                    <div class="card-content white">
                                         <h2 class="name">David Dell</h2>
-                                        <p class="description">1750e</p>
+                                        <a href=""><p class="description">Voir plus</p></a>
                                     </div>
                                 </div>
                             </div>
@@ -83,14 +84,17 @@ require 'header.php';
             <div class="formulaire">
                 <h3>Contactez moi !</h3>
                 <p>N'hésitez pas à m'envoyer un message pour plus d'information !</p>
-                <form action="">
+
+                <form method="post">
                     <div class="info_user">
-                        <input type="text" id="fname" name="firstname" placeholder="Votre nom">
-                        <input type="text" id="femail" name="firstname" placeholder="Votreemail@gmail.com">
+                        <input type="text" id="fname" name="nom" placeholder="Votre nom">
+                        <input type="text" id="femail" name="mail" placeholder="Votreemail@gmail.com">
+                        <input type="text" id="" name="sujet" placeholder="Votre sujet">
                     </div>
-                    <input type="text" id="ftexte" name="firstname" placeholder="Écrire un message ici">
-                    <input type="submit" value="VALIDER" id="submit">
+                    <textarea type="text" id="ftexte" name="message" placeholder="Écrire un message ici"></textarea>
+                    <input type="submit" value="ENVOYER" id="submit">
                 </form>
+
             </div>
             <div class="info_contact">
                 <div class="information">
