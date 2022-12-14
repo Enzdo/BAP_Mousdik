@@ -91,7 +91,7 @@ require_once 'contact.php';
                         <input type="text" id="femail" name="mail" placeholder="Votreemail@gmail.com">
                         <input type="text" id="" name="sujet" placeholder="Votre sujet">
                     </div>
-                    <textarea type="text" id="ftexte" name="message" placeholder="Écrire un message ici"></textarea>
+                    <textarea id="ftexte" name="message" placeholder="Écrire un message ici"></textarea>
                     <input type="submit" value="ENVOYER" id="submit">
                 </form>
 

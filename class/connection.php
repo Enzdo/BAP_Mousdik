@@ -44,29 +44,46 @@ class Connection{
             'id'=>$id,
         ]);
     }
-/*
-    public function isExisting(string $pw, string $email):array{
-        $pass = md5($pw. 'UN_PETIT_GRAIN2SABLE');
 
-        $sth = $this->pdo->prepare('SELECT * FROM user
-                                    WHERE email=:email AND password=:pass');
-        $sth->execute(['email'=>$email, 'pass'=>$pass]);
 
-        return $sth->fetchAll(PDO::FETCH_ASSOC);
+
+
+
+
+
+
+    public function insertAvis(Avis $avis)
+    {
+        $query = 'INSERT INTO review (name, message, score)
+                VALUES (:name, :message, :score)';
+
+        $statement= $this->pdo->prepare($query);
+
+        return $statement->execute([
+            'name'=>$avis->name,
+            'message'=>$avis->message,
+            'score'=>$avis->score,
+
+        ]);
     }
 
-    public function antiDoppelganger($new):bool{
+    public function getAllAvis():array{
+        $sth = $this->pdo->prepare("SELECT * FROM review");
+        $sth->execute();
+        return $sth->fetchAll(PDO::FETCH_ASSOC);
 
-        $sth = $this->pdo->prepare("SELECT email FROM user
-                                    WHERE email=:new");
-        $sth->execute(['new'=>$new]);
-        $oui=$sth->fetchAll(PDO::FETCH_ASSOC);
-        if(empty($oui)){
-            $isValid = true;
-        }else{
-            $isValid = false;
-        }
 
-        return $isValid;
-    }*/
+    }
+
+    public function deleteAvis(int $id):bool{
+        $query = 'DELETE FROM review
+                  WHERE id=:id';
+
+        $sth=$this->pdo->prepare($query);
+
+        return $sth->execute([
+            'id'=>$id,
+        ]);
+    }
+
 }

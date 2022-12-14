@@ -25,10 +25,6 @@ $connection = new Connection();
             $_POST['image']
     );
 
-        //save to databse
-
-        //print_r($_SESSION['user'][0]['id']);
-
         $result = $connection->insertPiano($piano);
 
         if ($result){
@@ -62,7 +58,26 @@ $connection = new Connection();
     </div>
 
     <h5>Vos Avis</h5>
-    <div></div>
+    <div>
+        <?php
+        $myAvis = $connection->getAllAvis();
+
+        foreach ($myAvis as $value){
+
+            echo'<ul>';
+            ?>
+            <li>
+                <?php
+                echo "<p>".$value['name'].' / '.$value['message'].' / '.$value['score'].'sur5 / '.$value['date']."</p>";
+                echo '<a href="deleteAvis.php?id='. $value['id'].'">supprimer cet avis</a>';
+                ?>
+            </li> <?php
+
+            echo'</ul>';
+        }
+
+        ?>
+    </div>
 
 </main>
 <?php
