@@ -1,6 +1,10 @@
 <?php
 
 require 'header.php';
+require 'class/connection.php';
+
+$connection = new Connection();
+
 ?>
 <main>
         <div class="section_rdv">
@@ -83,9 +87,23 @@ require 'header.php';
                     </div>
             </div>
         </div>
+
 </main>
+<?php
+/*
+$myPianos = $connection->getNewPiano();
+?>
+<script>
+    let pianos = <?php echo json_encode($myPianos); ?>;
+        console.log(pianos)
+
+    function leTir(pianos) {
+
+    }
+</script>
+
 
 <?php
-
+*/
 require 'footer.php';
 ?>

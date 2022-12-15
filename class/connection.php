@@ -34,6 +34,13 @@ class Connection{
 
     }
 
+    public function getNewPiano():array{
+        $sth = $this->pdo->prepare("SELECT * FROM piano
+                                          ORDER BY `date` DESC");
+        $sth->execute();
+        return $sth->fetchAll(PDO::FETCH_ASSOC);
+    }
+
     public function getOldPiano():array{
         $sth = $this->pdo->prepare("SELECT * FROM piano
                                           ORDER BY `date` ASC");
@@ -41,14 +48,14 @@ class Connection{
         return $sth->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public function getAscPiano():array{
+    public function getLowPiano():array{
         $sth = $this->pdo->prepare("SELECT * FROM piano
                                           ORDER BY `price` ASC");
         $sth->execute();
         return $sth->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public function getDescPiano():array{
+    public function getHightPiano():array{
         $sth = $this->pdo->prepare("SELECT * FROM piano
                                           ORDER BY `price` DESC");
         $sth->execute();

@@ -5,8 +5,17 @@ require 'class/connection.php';
 require_once 'class/classPiano.php';
 
 $connection = new Connection();
+session_start();
+
+if (empty($_SESSION)){
+    header('Location: security.php');
+}
 ?>
 <main>
+    <form action="./security.php" method="post">
+        <button name="disconnect" type="submit">Déconnexion</button>
+    </form>
+
     <h5>Admin</h5>
     <form method="POST">
         <input type="file" id="Pimage" name="image" placeholder="Image du piano">
