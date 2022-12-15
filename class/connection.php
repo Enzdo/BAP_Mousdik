@@ -34,6 +34,27 @@ class Connection{
 
     }
 
+    public function getOldPiano():array{
+        $sth = $this->pdo->prepare("SELECT * FROM piano
+                                          ORDER BY `date` ASC");
+        $sth->execute();
+        return $sth->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function getAscPiano():array{
+        $sth = $this->pdo->prepare("SELECT * FROM piano
+                                          ORDER BY `price` ASC");
+        $sth->execute();
+        return $sth->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function getDescPiano():array{
+        $sth = $this->pdo->prepare("SELECT * FROM piano
+                                          ORDER BY `price` DESC");
+        $sth->execute();
+        return $sth->fetchAll(PDO::FETCH_ASSOC);
+    }
+
     public function deletePiano(int $id):bool{
         $query = 'DELETE FROM piano
                   WHERE id=:id';

@@ -46,7 +46,7 @@ $connection = new Connection();
             ?>
             <li>
                 <?php
-                echo "<p>".$value['name'].' / '.$value['price'].'€ / '.$value['date']."</p>";
+                echo "<p>".$value['name'].' / '.$value['brand'].' / '.$value['price'].'€ / '.$value['date']."</p>";
                 echo '<a href="deletePiano.php?id='. $value['id'].'">supprimer ce piano</a>';
                 ?>
             </li> <?php
