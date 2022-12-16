@@ -1,9 +1,14 @@
 <?php
 
 require 'header.php';
+require 'class/connection.php';
+require_once 'class/classAvis.php';
+
+$connection = new Connection();
 ?>
 <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 <main>
+<<<<<<< HEAD
     <div class="BlockAvis">
         <div class="titre_avis">
             <h5>Avis</h5>
@@ -29,9 +34,26 @@ require 'header.php';
                 </form>
             </div>
         </div>
-
 </main>
 <?php
+if($_POST){
+    $avis = new avis(
+        $_POST['name'],
+        $_POST['message'],
+        $_POST['note']
+    );
+
+    $result = $connection->insertAvis($avis);
+
+    if ($result){
+        echo 'Vous avez ajouté votre avis avec succés !';
+    } else {
+        echo 'L\'opération a échouée';
+    }
+}
+
+
+
 
 require 'footer.php';
 ?>
