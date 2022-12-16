@@ -23,7 +23,7 @@
 }
 
 .nom_reseau {
-    border-bottom: #04030c solid 2px;
+    border-bottom: #222222 solid 2px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -62,7 +62,7 @@
     }
 
     .nom_reseau {
-        border-bottom: #04030c solid 2px;
+        border-bottom: #222222 solid 2px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -111,7 +111,7 @@
     }
 
     .nom_reseau {
-        border-bottom: #04030c solid 2px;
+        border-bottom: #222222 solid 2px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
