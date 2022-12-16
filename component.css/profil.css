@@ -1,0 +1,130 @@
+.profil {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10%;
+}
+
+.photo_profil {
+    width: 30%;
+    height: 100%;
+}
+
+.photo_profil img {
+    width: 100%;
+    height: 100%;
+}
+
+.profil_mousdik {
+    width: 45%;
+}
+
+.nom_reseau {
+    border-bottom: #222222 solid 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.nom_reseau h2 {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+
+@media (max-width:1100px) {
+    .profil {
+        width: 100%;
+        height: 85vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10%;
+    }
+
+    .photo_profil {
+        width: 220px;
+        height: 220px;
+    }
+
+    .photo_profil img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .profil_mousdik {
+        width: 55%;
+    }
+
+    .nom_reseau {
+        border-bottom: #222222 solid 2px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 5%;
+    }
+
+    .nom_reseau h2 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+}
+
+@media (max-width:850px) {
+    .profil {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10% 0%;
+    }
+
+    .profil_mousdik {
+        width: 80%;
+    }
+
+    .photo_profil {
+        width: 220px;
+        height: 220px;
+    }
+
+    .photo_profil img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .profil_mousdik {
+        margin-top: 10%;
+        width: 55%;
+    }
+
+    .profil_mousdik p {
+        text-align: justify;
+    }
+
+    .nom_reseau {
+        border-bottom: #222222 solid 2px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 5%;
+    }
+
+    .nom_reseau h2 {
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+    .reseau {
+        display: none;
+    }
+
+}
