@@ -29,14 +29,14 @@ window.onload = () => {
     function resetStars(note = 0){
         for(star of stars){
             if(star.dataset.value > note) {
-                star.style.color = "black";
+                //star.style.color = "black";
                 star.classList.add("lar");
                 star.classList.remove("las")
             }else{
-                star.style.color = "#8a8604";
+                //star.style.color = "#8a8604";
                 star.classList.add("las");
                 star.classList.remove("lar")
             }
         }
-    }
+}
 }

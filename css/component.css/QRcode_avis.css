@@ -1,0 +1,56 @@
+.PAvis {
+    display: flex;
+    padding: 2%;
+    align-items: center;
+    justify-content: center;
+    background-color: #04030c;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.PAvis .formulaire form {
+    padding: 5% 0%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+}
+.PAvis .formulaire .info_user {
+    width: 100%;
+}
+.PAvis .formulaire input {
+    border-radius: 8px;
+    padding: 1%;
+    margin: 1% 0% 1% 0%;
+}
+.okok{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.BlockAvis{
+    padding: 10% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: #04030c;
+}
+.titre_avis{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: 20%
+}
+.titre_avis h5{
+    font-size: x-large;
+    color: #FFFFFF;
+}
+.stars{
+    color: #8a8604;
+    cursor: pointer;
+}
+#fname2 {
+    width: 60%;
+    height: 40px;
+}
