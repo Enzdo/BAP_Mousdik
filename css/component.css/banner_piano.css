@@ -15,7 +15,7 @@
     color: white;
     width: 90%;
     height: 90%;
-    background-color: #04030c;
+    background-color: #222222;
 }
 
 .piano_info {
@@ -86,7 +86,7 @@
     color: white;
     width: 90%;
     height: 90%;
-    background-color: #04030c;
+    background-color: #222222;
 }
 
 .titre_suggestion {
@@ -176,7 +176,7 @@ a .card_suggestion h6 {
         color: white;
         width: 90%;
         height: 100%;
-        background-color: #04030c;
+        background-color: #222222;
     }
 
     .suggestion_pianos a {
@@ -233,7 +233,7 @@ a .card_suggestion h6 {
         color: white;
         width: 90%;
         height: 100%;
-        background-color: #04030c;
+        background-color: #222222;
     }
 
     .piano_info {
@@ -293,7 +293,7 @@ a .card_suggestion h6 {
         color: white;
         width: 90%;
         height: 100%;
-        background-color: #04030c;
+        background-color: #222222;
     }
 
     .suggestion_pianos a {

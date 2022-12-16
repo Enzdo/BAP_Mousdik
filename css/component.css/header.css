@@ -7,7 +7,7 @@ header {
     font-weight: 500;
     width: 100%;
     height: 25vh;
-    background-color: #04030c;
+    background-color: #222222;
 }
 
 header .navigation {
@@ -152,7 +152,7 @@ header nav {
         z-index: 4;
         top: 0;
         left: -250px;
-        background-color: #04030c;
+        background-color: #222222;
         border-right: #ffffff 1px solid;
         padding-top: 60px;
         transition: left 0.5s ease;
