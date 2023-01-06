@@ -3,7 +3,7 @@
     padding: 2%;
     align-items: center;
     justify-content: center;
-    background-color: #04030c;
+    background-color: #222222;
     padding-left: 20%;
     padding-right: 20%;
 }
@@ -34,23 +34,30 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    color: #04030c;
 }
 .titre_avis{
     display: flex;
     justify-content: center;
     width: 70%;
-    height: 20%
+    height: 20%;
 }
 .titre_avis h5{
     font-size: x-large;
-    color: #FFFFFF;
+    color: #222222;
 }
 .stars{
-    color: #8a8604;
+    color: #359c9d;
     cursor: pointer;
 }
 #fname2 {
     width: 60%;
     height: 40px;
+}
+#submit2{
+    color: white;
+    background-color: #359c9d;
+    width: 40%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
 }

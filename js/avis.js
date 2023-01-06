@@ -5,14 +5,14 @@ window.onload = () => {
     for(star of stars){
         star.addEventListener("mouseover", function(){
             resetStars();
-            this.style.color = "#8a8604";
+            this.style.color = "#359c9d";
             this.classList.add("las");
             this.classList.remove("lar")
 
             let previousStar = this.previousElementSibling;
 
             while(previousStar) {
-                previousStar.style.color = "#8a8604"
+                previousStar.style.color = "#359c9d"
                 previousStar.classList.add("las");
                 previousStar.classList.remove("lar");
 

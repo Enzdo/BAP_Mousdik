@@ -8,7 +8,6 @@ $connection = new Connection();
 ?>
 <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 <main>
-<<<<<<< HEAD
     <div class="BlockAvis">
         <div class="titre_avis">
             <h5>Avis</h5>
@@ -29,7 +28,7 @@ $connection = new Connection();
                                 <input type="text" id="fname2" name="nom" placeholder="Votre nom">
                         </div>
                         <textarea type="text" id="ftexte" name="mail" placeholder="Faites part de votre expérience"></textarea>
-                            <input type="submit" value="ENVOYER" id="submit">
+                            <input type="submit" value="ENVOYER" id="submit2">
                     </div>
                 </form>
             </div>

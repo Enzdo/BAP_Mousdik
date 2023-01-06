@@ -1,0 +1,11 @@
+.boxS{
+    padding: 10% 0%;
+    display: flex;
+    justify-content: center;
+}
+#formS{
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

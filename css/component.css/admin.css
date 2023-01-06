@@ -1,0 +1,199 @@
+.pianoAdmin2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form.ajoutPiano{
+    background-color: #222222;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+}
+.ajoutPiano input{
+    margin-bottom: 5px;
+}
+#Pimage{
+    color: #FFFFFF;
+}
+.tousLesPiano{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.tousLesPiano ul{
+    display: flex;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    align-items: center;
+    width: 20%;
+    justify-content: center;
+}
+.tousLesPiano a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.suprimePiano{
+    background-color: #8A1404;
+}
+.blockPiano{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    background-color: #222222;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.nomPiano{
+    padding-bottom: 5px;
+}
+.brandPiano{
+    padding-bottom: 5px;
+}
+.pricePiano{
+    padding-bottom: 5px;
+}
+.datePiano{
+    padding-bottom: 5px;
+}
+h5 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 15px;
+}
+.tousLesAvis{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+}
+.tousLesAvis ul{
+    display: flex;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.tousLesAvis a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.suprimeAvis{
+    background-color: #8A1404;
+}
+.blockAvis{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    background-color: #222222;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.nomAvis{
+    padding-bottom: 5px;
+}
+.brandAvis{
+    padding-bottom: 5px;
+}
+.priceAvis{
+    padding-bottom: 5px;
+}
+.dateAvis{
+    padding-bottom: 5px;
+}
+
+@media(min-width: 768px) and (max-width: 1388px){
+    .blockPiano{
+        display: flex;
+        padding: 20%;
+        justify-content: center;
+        background-color: #222222;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tousLesPiano ul{
+        display: flex;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+        align-items: center;
+        width: 25%;
+        justify-content: center;
+    }
+    .tousLesPiano{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+@media(min-width: 425px) and (max-width: 596px){
+    .blockPiano{
+        display: flex;
+        padding: 20%;
+        justify-content: center;
+        background-color: #222222;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tousLesPiano ul{
+        display: flex;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+        align-items: center;
+        width: 40%;
+        justify-content: center;
+    }
+    .tousLesPiano{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+}
+@media(min-width: 597px) and (max-width: 767px){
+    .blockPiano{
+        display: flex;
+        padding: 20%;
+        justify-content: center;
+        background-color: #222222;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tousLesPiano ul{
+        display: flex;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+        align-items: center;
+        width: 33%;
+        justify-content: center;
+    }
+    .tousLesPiano{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+}
+@media(max-width: 424px){
+    .blockPiano{
+        display: flex;
+        padding: 20%;
+        justify-content: center;
+        background-color: #222222;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tousLesPiano ul{
+        display: flex;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+    .tousLesPiano{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+}

@@ -2,15 +2,16 @@
 session_start();
 
 unset($_SESSION['isAdmin']);
-
+require 'header.php';
 ?>
 <main>
 
-
-    <form method="post">
+    <div class="boxS">
+    <form method="post" id="formS">
         <input type="password" id="" name="mdp" placeholder="mot de passe admin">
         <input type="submit" value="ENTRER ADMIN" id="security">
     </form>
+    </div>
     <?php
 
     if ($_POST){
@@ -24,3 +25,7 @@ unset($_SESSION['isAdmin']);
     }
     ?>
 </main>
+<?php
+
+require 'footer.php';
+?>

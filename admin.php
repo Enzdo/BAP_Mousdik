@@ -15,16 +15,16 @@ if (empty($_SESSION)){
     <form action="./security.php" method="post">
         <button name="disconnect" type="submit">Déconnexion</button>
     </form>
-
+<div class="pianoAdmin2">
     <h5>Admin</h5>
-    <form method="POST">
-        <input type="file" id="Pimage" name="image" placeholder="Image du piano">
+    <form class="ajoutPiano" method="POST">
         <input type="text" id="Pname" name="name" placeholder="Nom du piano">
+        <input type="file" id="Pimage" name="image" placeholder="Image du piano">
         <input type="text" id="Pmarque" name="brand" placeholder="Marque du piano">
         <input type="text" id="Pprix" name="price" placeholder="Prix du piano">
         <input type="submit" value="VALIDER" id="submit">
     </form>
-
+</div>
     <?php
     if($_POST){
         $piano = new piano(
@@ -45,7 +45,8 @@ if (empty($_SESSION)){
     ?>
 
     <h5>Vos Pianos</h5>
-    <div>
+
+    <div class="tousLesPiano">
         <?php
         $myPianos = $connection->getAllPiano();
 
@@ -55,8 +56,8 @@ if (empty($_SESSION)){
             ?>
             <li>
                 <?php
-                echo "<p>".$value['name'].' / '.$value['brand'].' / '.$value['price'].'€ / '.$value['date']."</p>";
-                echo '<a href="deletePiano.php?id='. $value['id'].'">supprimer ce piano</a>';
+                echo "<div class='blockPiano'><div class='nomPiano'>".$value['name']. "</div><div class='brandPiano'>" .$value['brand']."</div><div class='pricePiano'>".$value['price'].'€'."</div><div class='datePiano'>".$value['date']."</div>";
+                echo '<div class="suprimePiano"><a href="deletePiano.php?id='. $value['id'].'">supprimer ce piano</a></div></div>';
                 ?>
             </li> <?php
 
@@ -67,7 +68,7 @@ if (empty($_SESSION)){
     </div>
 
     <h5>Vos Avis</h5>
-    <div>
+    <div class="tousLesAvis">
         <?php
         $myAvis = $connection->getAllAvis();
 
@@ -77,8 +78,8 @@ if (empty($_SESSION)){
             ?>
             <li>
                 <?php
-                echo "<p>".$value['name'].' / '.$value['message'].' / '.$value['score'].'sur5 / '.$value['date']."</p>";
-                echo '<a href="deleteAvis.php?id='. $value['id'].'">supprimer cet avis</a>';
+                echo "<div class='blockAvis'><div class='nomAvis'>".$value['name']."</div><div class='messageAvis'>".$value['message']."</div><div class='scoreAvis'>".$value['score']."sur5 </div><div class='dateAvis'>".$value['date']."</div>";
+                echo '<div class="suprimePiano"><a href="deleteAvis.php?id='. $value['id'].'">supprimer cet avis</a></div></div>';
                 ?>
             </li> <?php
 
